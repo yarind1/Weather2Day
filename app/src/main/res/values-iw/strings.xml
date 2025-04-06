@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">אפליקציית מזג אוויר</string>
+
+    <!-- Hints and Labels Haim stuff -->
+    <string name="label_city">%1$s</string>
+    <string name="label_country">%1$s</string>
+    <string name="label_temp">%1$.1f %2$s</string>
+    <string name="label_feels_like">מרגיש כמו: %1$.1f %2$s</string>
+    <string name="label_humidity">לחות: %1$d%%</string>
+    <string name="label_pressure">לחץ: %1$d hPa</string>
+    <string name="label_sunrise">זריחה: %1$s</string>
+    <string name="label_sunset">שקיעה: %1$s</string>
+    <string name="label_wind">רוח: %1$.1f %2$s</string>
+    <string name="label_weather_description">%1$s</string>
+    <string name="label_temp_min">מינימום: %1$.1f %2$s</string>
+    <string name="label_temp_max">מקסימום: %1$.1f %2$s</string>
+    <string name="enter_city_name">הכנס שם עיר</string>
+    <string name="search">חפש</string>
+    <string name="enter_country_code">הכנס מדינה</string>
+
+
+    <!-- Default values when data is not available -->
+    <string name="city_n_a">תל אביב</string>
+    <string name="country_n_a">ישראל</string>
+    <string name="feels_like_n_a">מרגיש כמו: 20°C</string>
+    <string name="temperature_n_a">25°C</string>
+    <string name="humidity_n_a">לחות: 60%</string>
+    <string name="pressure_n_a">לחץ: 1013 hPa</string>
+    <string name="sunrise_n_a">זריחה: 06:30</string>
+    <string name="sunset_n_a">שקיעה: 18:00</string>
+    <string name="wind_speed_n_a">רוח: 12 קמ"ש</string>
+    <string name="weather_description_n_a">שמיים בהירים</string>
+    <string name="weather_icon_desc">אייקון מזג אוויר המייצג את התנאים הנוכחיים</string>
+
+
+    <!-- Loading and Errors -->
+    <string name="loading">טוען...</string>
+    <string name="error_fetch_weather">נכשל באחזור נתוני מזג האוויר</string>
+    <string name="error_city_not_found">העיר לא נמצאה</string>
+    <string name="error_fetch_coordinates">נכשל באחזור נתוני המיקום</string>
+    <string name="error_no_data">לא נמצאו נתונים</string>
+    <string name="please_enter_city_country">אנא הזן עיר ומדינה</string>
+    <string name="favorite_already_exists">%1$s כבר קיימת במועדפים!</string>
+    <string name="favorite_added">%1$s נוספה למועדפים!</string>
+    <string name="favorite_list_title">רשימת מועדפים</string>
+    <string name="Refresh">רענן</string>
+    <string name="error_refresh_favorites">לא ניתן לרענן את רשימת המועדפים. נסה שוב מאוחר יותר.</string>
+
+
+    <!-- Dashboard -->
+    <string name="search_city">חיפוש עיר</string>
+    <string name="weather_dashboard">תפריט ראשי</string>
+    <string name="location_weather">מזג אוויר מקומי</string>
+    <string name="favorite">מועדפים</string>
+    <string name="settings">הגדרות</string>
+
+    <!-- headers-->
+    <string name="local_weather">מזג אוויר מקומי</string>
+    <string name="city_search">חיפוש עיר</string>
+    <string name="home">בית</string>
+
+    <!-- Haim stuff-->
+    <string name="today">היום</string>
+    <string name="city">עיר</string>
+    <string name="temperature">טמפרטורה</string>
+    <string name="description">תיאור</string>
+    <string name="max_c">מקסימום: --°C</string>
+    <string name="min_c">מינימום: --°C</string>
+    <string name="feels_like_c">מרגיש כמו: --°C</string>
+    <string name="wind_km_h">רוח: -- קמ"ש</string>
+    <string name="day">יום</string>
+    <string name="hour">שעה</string>
+    <string name="temp">טמ"פ</string>
+    <!-- Haim stuff-->
+
+
+    <string name="save">שמור</string>
+    <string name="delete">מחק</string>
+    <string name="edit">ערוך</string>
+    <string name="type_note">הוסף הערה כאן…</string>
+    <string name="note_saved">ההערה נשמרה!</string>
+
+
+    <!-- האייקונים שבפרטי המזג אוויר -->
+    <string name="sunrise_icon_desc">אייקון זריחה</string>
+    <string name="sunset_icon_desc"> אייקון שקיעה</string>
+    <string name="humidity_icon_desc">אייקון לחות</string>
+    <string name="wind_icon_desc">אייקון רוח</string>
+    <string name="precipitation_icon_desc">אייקון משקעים</string>
+    <string name="visibility_icon_desc">אייקון ראות</string>
+
+    <!-- Strings for the WeatherDetails UI -->
+    <string name="weather_background_desc">צבע רקע גרדיאנט</string>
+    <string name="hourly_forecast_title">תחזית שעתית</string>
+    <string name="details">פרטים</string>
+    <string name="info">מידע</string>
+    <string name="sort_by_temperature">מיון: מהנמוך לגבוה / מהגבוה לנמוך</string>
+    <string name="sort_by_city_name">מיון: מ-A עד Z / מ-Z עד A</string>
+
+    <!-- Weather Data temp Strings -->
+    <string name="details2">פרטים</string>
+    <string name="city2">עיר</string>
+    <string name="country2">מדינה</string>
+    <string name="Temp2">17.01</string>
+    <string name="feelslike2">מרגיש כמו: 16.91</string>
+    <string name="high_19_low_10">מקסימום 19° • מינימום 10°</string>
+    <string name="description2">מעט עננים</string>
+    <string name="more_details">פרטים נוספים</string>
+    <string name="sunrise2">זריחה: 08:22</string>
+    <string name="sunset2">שקיעה: 19:27</string>
+    <string name="humidity2">לחות: 82%</string>
+    <string name="wind2">רוח: 2.57 מ׳ לשנייה</string>
+    <string name="precip2">משקעים: 0.3 מ״מ</string>
+    <string name="visibility">ראות: 9.7 ק״מ</string>
+
+    <!--City Search Fragment-->
+    <string name="go_to_favs_btn">לרשימת מעודפים</string>
+
+    <!-- מחרוזות נתוני מזג אוויר עם מצייני מקום עבור היחידה -->
+    <string name="weather_temp">%1$.1f %2$s</string>
+    <string name="weather_feels_like">מרגיש כמו: %1$.1f %2$s</string>
+    <string name="weather_humidity">לחות: %1$d%%</string>
+    <string name="weather_wind_speed">רוח: %1$.1f %2$s</string>
+    <string name="weather_sunrise">זריחה: %1$s</string>
+    <string name="weather_sunset">שקיעה: %1$s</string>
+    <string name="weather_description">%1$s</string>
+    <string name="weather_min_temp">מינימום: %1$.1f %2$s</string>
+    <string name="weather_max_temp">מקסימום: %1$.1f %2$s</string>
+    <string name="weather_precipitation">משקעים: %1$.1f מ"מ</string>
+    <string name="weather_visibility">ראות: %1$.1f ק"מ</string>
+
+
+    <!-- FavoritesFragment -->
+    <string name="no_favorites_found">לא נמצאו מועדפים</string>
+    <string name="refreshing_weather">מרענן את נתוני מזג האוויר…</string>
+    <string name="refresh_success">הרענון הסתיים בהצלחה!</string>
+    <string name="loading_favorites">טוען רשימת מועדפים…</string>
+
+    <string name="tomorrow_s_forecast">מזג האוויר מחר</string>
+
+
+    <!-- Settings page -->
+    <!-- GPS -->
+    <string name="enable_gps">הפעל מיקום</string>
+
+    <!-- Notifications -->
+    <string name="enable_notifications">הפעל התראות</string>
+    <!-- Temperature Units -->
+    <string name="temperature_units">יחידה</string>
+    <string name="celsius">צלזיוס</string>
+    <string name="fahrenheit">פרנהייט</string>
+
+
+
+
+
+    <string name="notification_permission_granted">הרשאת התראות אושרה</string>
+    <string name="notification_permission_denied">הרשאת התראות נדחתה</string>
+    <string name="location_permission_granted">הרשאת מיקום אושרה</string>
+    <string name="location_permission_denied">הרשאת מיקום נדחתה</string>
+    <string name="alarm_canceled">התראה בוטלה</string>
+    <string name="notification_set_daily">התראה נקבעה לשעה %1$s בכל יום!</string>
+    <string name="invalid_time_selected">נבחר זמן לא תקין</string>
+    <string name="notification_not_required">אין צורך בהרשאת התראות</string>
+    <string name="schedule_daily_notification">קבע התראה יומית</string>
+    <string name="cancel_daily_notification">בטל התראה יומית</string>
+    <string name="notification_set_text">התראה נקבעה לשעה %1$s</string>
+    <string name="no_alarm_scheduled">לא נקבעה התראה</string>
+
+
+    <!-- WeatherDetailsFragment Toasts -->
+    <string name="city_not_found">העיר לא נמצאה</string>
+    <string name="already_in_favorites">העיר כבר נמצאת במועדפים</string>
+    <string name="added_to_favorites">נוסף למועדפים</string>
+    <string name="error_fetch_forecast">שגיאה בקבלת תחזית</string>
+
+
+
+
+
+    <string name="no_internet_connection">אין קליטת אינטרנט</string>
+    <!-- WeatherNotificationWorker-->
+
+    <string name="notification_error_title">שגיאה</string>
+    <string name="notification_error_message">אנא אשר את כל ההרשאות</string>
+    <string name="no_data">אין נתונים</string>
+    <string name="unknown_city">עיר לא ידועה</string>
+    <string name="weather_notification_text">גבוה: %1$.1f°C, נמוך: %2$.1f°C\n%3$s\n%4$s</string>
+    <string name="gps_not_working_msg">המיקום כבוי! הפעל אותו בשביל מזג אוויר מדוייק</string>
+    <string name="turn_on_from_settings">אפשר גישה מהגדרות הטלפון</string>
+
+    <string name="location_permission_required">נדרשת הרשאת מיקום</string>
+    <string name="location_permission_required_message">נדרשת הרשאת מיקום כדי לקבל עדכוני מזג אוויר. אנא אפשר זאת בהגדרות האפליקציה.</string>
+    <string name="notification_permission_required">נדרשת הרשאת התראות</string>
+    <string name="notification_permission_required_message">נדרשת הרשאת התראות כדי לקבוע תזכורות. אנא אפשר זאת בהגדרות האפליקציה.</string>
+    <string name="open_settings">פתח הגדרות</string>
+    <string name="cancel">ביטול</string>
+
+    <string name="wind_unit_metric">מטר לשניה</string>
+    <string name="wind_unit_imperial">מייל לשעה</string>
+
+    <string name="am">לפנה"צ</string>
+    <string name="pm">אחה"צ</string>
+</resources>

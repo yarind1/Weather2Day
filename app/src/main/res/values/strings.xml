@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <!-- Hints and Labels -->
+    <string name="label_city">%1$s</string>
+    <string name="label_country">%1$s</string>
+    <string name="label_temp">%1$.1f %2$s</string>
+    <string name="label_feels_like">Feels Like: %1$.1f %2$s</string>
+    <string name="label_humidity">Humidity: %1$d%%</string>
+    <string name="label_pressure">Pressure: %1$d hPa</string>
+    <string name="label_sunrise">Sunrise: %1$s</string>
+    <string name="label_sunset">Sunset: %1$s</string>
+    <string name="label_wind">Wind: %1$.1f %2$s</string>
+    <string name="label_weather_description">%1$s</string>
+    <string name="label_temp_min">Min: %1$.1f %2$s</string>
+    <string name="label_temp_max">Max: %1$.1f %2$s</string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="search">Search</string>
+    <string name="enter_country_code">Enter country</string>
+
+    <!-- Default values when data is not available -->
+    <string name="city_n_a">Tel Aviv</string>
+    <string name="country_n_a">Israel</string>
+    <string name="feels_like_n_a">Feels Like:20°C</string>
+    <string name="temperature_n_a">25°C</string>
+    <string name="humidity_n_a">Humidity: 60%</string>
+    <string name="pressure_n_a">Pressure: 1013 hPa</string>
+    <string name="sunrise_n_a">Sunrise: 06:30</string>
+    <string name="sunset_n_a">Sunset: 18:00</string>
+    <string name="wind_speed_n_a">Wind Speed: 12 km/h</string>
+    <string name="weather_description_n_a">Clear Sky</string>
+    <string name="weather_icon_desc">Weather icon representing current conditions</string>
+
+
+    <!-- Loading and Errors -->
+    <string name="loading">Loading...</string>
+    <string name="error_fetch_weather">Failed to retrieve weather data</string>
+    <string name="error_city_not_found">City not found</string>
+    <string name="error_fetch_coordinates">Failed to fetch city coordinates</string>
+    <string name="error_no_data">No data found</string>
+    <string name="please_enter_city_country">Please enter city and country</string>
+    <string name="favorite_already_exists">%1$s is already in favorites!</string>
+    <string name="favorite_added">%1$s has been added to favorites!</string>
+    <string name="favorite_list_title">Favorite List</string>
+    <string name="Refresh">Refresh</string>
+    <string name="error_refresh_favorites">Unable to refresh favorites list. Please try again later.</string>
+
+
+    <!-- Dashboard -->
+    <string name="search_city">Search City</string>
+    <string name="weather_dashboard">Main Menu</string>
+    <string name="location_weather">Location Weather</string>
+    <string name="favorite">Favorite</string>
+    <string name="settings">Settings</string>
+    <!-- headers-->
+    <string name="local_weather">Local Weather</string>
+    <string name="city_search">City Search</string>
+    <string name="home">home</string>
+
+    <!-- Haim stuff-->
+    <string name="today">Today</string>
+    <string name="city">City</string>
+    <string name="temperature">Temperature</string>
+    <string name="description">Description</string>
+    <string name="max_c">Max: --°C</string>
+    <string name="min_c">Min: --°C</string>
+    <string name="feels_like_c">Feels like: --°C</string>
+    <string name="wind_km_h">Wind: -- km/h</string>
+    <string name="day">Day</string>
+    <string name="hour">Hour</string>
+    <string name="temp">Temp</string>
+    <string name="periodicuniquejob" translatable="false">periodicuniquejob</string>
+    <!-- Haim stuff-->
+
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="type_note">Add a note here…</string>
+    <string name="note_saved">Note saved!</string>
+
+    <!-- תיאור האייקונים -->
+    <string name="sunrise_icon_desc">Sunrise icon</string>
+    <string name="sunset_icon_desc">Sunset icon</string>
+    <string name="humidity_icon_desc">Humidity icon</string>
+    <string name="wind_icon_desc">Wind icon</string>
+    <string name="precipitation_icon_desc">Precipitation icon</string>
+    <string name="visibility_icon_desc">Visibility icon</string>
+
+
+    <!--City Search Fragment-->
+    <string name="go_to_favs_btn">Go to Favorites</string>
+
+    <!-- Strings for the WeatherDetails UI -->
+    <string name="weather_background_desc">Weather background gradient</string>
+    <string name="hourly_forecast_title">Hourly Forecast</string>
+    <string name="details">Details</string>
+    <string name="info">Info</string>
+    <string name="sort_by_temperature">sort:Low To High / High To Low</string>
+    <string name="sort_by_city_name">sort:A To Z / Z To A</string>
+
+
+
+
+    <!-- Weather Data temp Strings -->
+    <string name="details2">Details</string>
+    <string name="city2">City</string>
+    <string name="country2">Country</string>
+    <string name="Temp2">17.01</string>
+    <string name="feelslike2">16.91</string>
+    <string name="high_19_low_10">High 19° • Low 10°</string>
+    <string name="description2">few clouds</string>
+    <string name="more_details">More Details</string>
+    <string name="sunrise2">Sunrise: 08:22</string>
+    <string name="sunset2">Sunset: 19:27</string>
+    <string name="humidity2">Humidity: 82%</string>
+    <string name="wind2">Wind: 2.57 m/s</string>
+    <string name="precip2">Precip: 0.3 mm</string>
+    <string name="visibility">Visibility: 9.7 km</string>
+
+
+    <!-- Weather Data Strings with placeholders for the unit -->
+    <string name="weather_temp">%1$.1f %2$s</string>
+    <string name="weather_feels_like">Feels Like: %1$.1f %2$s</string>
+    <string name="weather_humidity">Humidity: %1$d%%</string>
+    <string name="weather_wind_speed">Wind: %1$.1f %2$s</string>
+    <string name="weather_sunrise">Sunrise: %1$s</string>
+    <string name="weather_sunset">Sunset: %1$s</string>
+    <string name="weather_description">%1$s</string>
+    <string name="weather_min_temp">Min: %1$.1f %2$s</string>
+    <string name="weather_max_temp">Max: %1$.1f %2$s</string>
+    <string name="weather_precipitation">Precipitation: %1$.1f mm</string>
+    <string name="weather_visibility">Visibility: %1$.1f km</string>
+
+
+    <string name="no_favorites_found">No favorites found</string>
+    <string name="refreshing_weather">Refreshing weather data…</string>
+    <string name="refresh_success"> Refresh successful!</string>
+    <string name="loading_favorites">Loading favorites list…</string>
+
+    <!-- Settings page -->
+    <!-- GPS -->
+    <string name="enable_gps">Enable GPS</string>
+
+    <!-- Notifications -->
+    <string name="enable_notifications">Enable Notifications</string>
+    <!-- Temperature Units -->
+    <string name="temperature_units">Unit</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+
+
+    <string name="tomorrow_s_forecast">Tomorrow\'s forecast</string>
+
+
+
+    <string name="notification_permission_granted">Notification permission granted</string>
+    <string name="notification_permission_denied">Notification permission denied</string>
+    <string name="location_permission_granted">Location permission granted</string>
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="alarm_canceled">Alarm canceled</string>
+    <string name="notification_set_daily">Notification set for %1$s every day!</string>
+    <string name="invalid_time_selected">Invalid time selected</string>
+    <string name="notification_not_required">Notification permission not required</string>
+    <string name="schedule_daily_notification">Schedule Daily Notification</string>
+    <string name="cancel_daily_notification">Cancel Daily Notification</string>
+    <string name="notification_set_text">Notification set for %1$s</string>
+    <string name="no_alarm_scheduled">No alarm is scheduled</string>
+    <string name="turn_on_from_settings">Turn it on from the phone settings</string>
+
+
+    <!-- WeatherDetailsFragment Toasts -->
+    <string name="city_not_found">City not found</string>
+    <string name="already_in_favorites">The city is already in favorites</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="error_fetch_forecast">Error fetching forecast</string>
+
+
+    <string name="no_internet_connection">No Internet Connection</string>
+    <!-- WeatherNotificationWorker-->
+
+    <string name="notification_error_title">Error</string>
+    <string name="notification_error_message">Please apply all permissions</string>
+    <string name="no_data">No Data</string>
+    <string name="unknown_city">Unknown City</string>
+    <string name="weather_notification_text">High: %1$.1f°C, Low: %2$.1f°C\n%3$s\n%4$s</string>
+
+    <string name="gps_not_working_msg">GPS is disabled! Enable it for accurate weather updates.</string>
+
+    <string name="location_permission_required">Location Permission Required</string>
+    <string name="location_permission_required_message">Location permission is required to get weather updates. Please enable it in the app settings.</string>
+    <string name="notification_permission_required">Notification Permission Required</string>
+    <string name="notification_permission_required_message">Notification permission is required to set reminders. Please enable it in the app settings.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="wind_unit_metric">m/s</string>
+    <string name="wind_unit_imperial">mph</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+</resources>

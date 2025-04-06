@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_weather_gradient"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/home"
+            android:src="@drawable/ic_home"
+            android:scaleType="fitCenter"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city_search"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- אזור גלילה עם תוכן -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp">
+
+            <!-- שדה חיפוש עם השלמה אוטומטית -->
+            <AutoCompleteTextView
+                android:id="@+id/etCityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_city_name"
+                android:inputType="text"
+                android:completionThreshold="2"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnGoToFavorites"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_favs_btn"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"/>
+
+
+            <!-- ProgressBar מוצג כברירת מחדל מוסתר -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+

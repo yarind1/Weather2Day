@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Full-page Background -->
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_weather_gradient"
+        android:contentDescription="@string/weather_background_desc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Semi-transparent overlay to improve text legibility -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/overlayContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Home Button (left) -->
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home"
+            app:layout_constraintBottom_toTopOf="@+id/containerGps"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Settings Title (centered via a placeholder on the right) -->
+        <TextView
+            android:id="@+id/tvSettingsHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btnHome"
+            app:layout_constraintEnd_toStartOf="@id/placeholderRight"
+            app:layout_constraintStart_toEndOf="@id/btnHome"
+            app:layout_constraintTop_toTopOf="@id/btnHome" />
+
+        <!-- Invisible placeholder to keep title centered -->
+        <View
+            android:id="@+id/placeholderRight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btnHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnHome" />
+
+        <!-- GPS Container -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerGps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnHome">
+
+            <TextView
+                android:id="@+id/tvGpsLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_gps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/switchGps"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switchGps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:focusable="false"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Notifications Container -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerNotifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerGps">
+
+            <TextView
+                android:id="@+id/tvNotificationsLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_notifications"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/switchNotifications"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switchNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Temperature Units Container (Celsius / Fahrenheit) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerTemperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerNotifications">
+
+            <!-- Label for Temperature -->
+            <TextView
+                android:id="@+id/tvTemperatureLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_units"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/rgTemperature"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- RadioGroup for Celsius / Fahrenheit -->
+            <RadioGroup
+                android:id="@+id/rgTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTemperatureLabel"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rbCelsius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/celsius"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:ellipsize="none"
+                    android:maxLines="1" />
+
+                <RadioButton
+                    android:id="@+id/rbFahrenheit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fahrenheit"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:ellipsize="none"
+                    android:maxLines="1" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Schedule Daily Notification Container -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerTemperature">
+
+            <TextView
+                android:id="@+id/tvPickTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/schedule_daily_notification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Cancel Daily Notification Container -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerCancelAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerAlarm">
+
+            <TextView
+                android:id="@+id/tvCancelAlarm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel_daily_notification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
